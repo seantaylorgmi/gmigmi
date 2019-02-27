@@ -1,0 +1,30 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+	<head>
+        <title>Front Page Title</title>
+        <!-- 
+		demo
+		<css src="Gmigmi_Helloworld::css/css.css"/>
+		<script src="Gmigmi_Helloworld::js/js.js"/>
+		<css src="jquery/fileUploader/css/jquery.fileupload-ui.css"/>
+		<script src="path/file.js" defer="defer"/>
+		<link src="http://url.com" src_type="url"/>
+		<remove src="path/remove/file.css"/>
+
+		-->
+    </head> 
+
+    <body>
+
+
+        <referenceContainer name="sidebar.main">
+            <block class="Gmigmi\Helloworld\Block\Index\Sidebar" name="helloworld_index_sidebar" before="-" template="Gmigmi_Helloworld::helloworld_index_sidebar.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="content">
+            <block class="Gmigmi\Helloworld\Block\Index\Index" name="helloworld_index_index" template="Gmigmi_Helloworld::helloworld_index_index.phtml"/>
+        </referenceContainer>
+
+
+    </body>
+</page>
